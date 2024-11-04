@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vista.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <title>VIANDAS SALUDABLES</title>
+</head>
+<body>
+    <h1>BIENVENIDOS A LA ADMINISTRACIÓN DE CLIENTES Y PEDIDOS</h1>
+   <div>
+    <h2>CLIENTES  <i class="fa-solid fa-user"></i></h2>
+    <input type="button" value="VER CLIENTES" id="btnClientesget">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>TELEFONO</th>
+                <th>ESTADO</th>
+                <th>DETALLES</th>
+                <th>REGISTRO</th>
+                <th>SELECCIONAR</th>
+            </tr>
+        </thead>
+        <tbody id="idCuerpoDeTabla1">
+        </tbody>
+    </table>
+    </div>
+
+    <div>
+        <h2>Recuperando Clientes por (ID)</h2>
+        <label for="txtClienteId">Ingrese (ID)</label>
+        <input type="number" placeholder="Ingrese el ID del Cliente" id="txtClienteId">
+        <input type="button" value="Buscar Cliente" id="btnBuscarClientePorId">
+        <i class="fa-solid fa-magnifying-glass"></i>
+       
+        </div>
+        <h2>Agregar / Modificar / Eliminar Cliente</h2>
+        
+        <label id="idClienteId">ClienteID = </label>
+        <label for="idClienteNombre">Ingrese Nombre</label>
+        <br>
+        <input type="text" placeholder="Ingrese nombre del cliente" id="idClienteNombre">
+        <br>
+        <label for="idClienteTel">Ingrese El Numero de Telefono</label>
+        <br>
+        <input type="text" placeholder="Ingrese teléfono" id="idClienteTel">
+        <br>
+        <label for="idClienteEstado"> Ingrese el estado del Cliente </label>
+        <br>
+        <input type="text" placeholder="Ingrese estado" id="idClienteEstado">
+        <br>
+        <label for="idClienteDetalles">Ingrese los detalles</label>
+        <br>
+        <input type="text" placeholder="Detalles adicionales" id="idClienteDetalles">
+        <br>
+        <label for="idClienteFecha">Ingrese la Fecha de su registro</label>
+        <br>
+        <input type="text" placeholder="Fecha de Registro" id="idClienteFecha">
+        <br>
+        <i class="fa-solid fa-plus"></i>
+        <input type="button" value="Agregar Cliente" id="btnAgregarCliente">
+        <input type="button" value="Nuevo Cliente" id="btnNuevoCliente">
+        <input type="button" value="Guardar Cambios" id="idBtnGuardarCambios">
+        <input type="button" value="Eliminar Cliente" id="idBtnEliminarCliente">
+        </div>
+    </div>
+
+    <div>
+        <h2>PEDIDOS <i class="fa-solid fa-utensils"></i></h2>
+        
+        <input type="button" value="VER PEDIDOS" id="btnPedidosGet">
+        <table>
+            <thead>
+                <th>PEDIDO ID</th>
+                <th>CLIENTE ID</th>
+                <th>NOMBRE</th>
+                <th>VIANDA ID</th>
+                <th>NOMBRE VIANDA</th>
+                <th>FECHA PEDIDO</th>
+                <th>CANTIDAD</th>
+                <th>TOTAL</th>
+                <th>SELECCIONAR</th>
+                <tbody id="idCuerpoDeTabla2">
+                </tbody>
+            </thead>
+        </table>
+    </div>
+
+
+    <div>
+        <h2>Recuperando Pedidos por (ID)</h2>
+        <label for="txtPedidoid">Ingrese (ID)</label>
+        <input type="text" placeholder="Ingrese el ID del Pedido" id="txtPedidoid">
+        <input type="button" value="Recuperar pedido por (ID)" id="btnBuscarPedidoPorId">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+
+    <div>
+        <h2>Agregar / Modificar / Eliminar Pedido</h2>
+
+        <label id="idPedidoId">PedidoID = </label>
+        <br>
+
+        <div >
+            
+        <label for="idClienteId1">Ingrese id Cliente</label>
+        <br>
+        <input type="text" placeholder="Ingrese cliente ID" id="idClienteId1">
+        <label for="idClienteId"></label>
+        <br>
+        <label for="idViandaid">Ingrese id Vianda</label>
+        <br>
+        <input type="text" placeholder="Ingrese Vianda ID" id="idViandaid">
+        <br>
+        <label for="idFechaPedido">Ingrese Fecha del Pedido</label>
+        <br>
+        <input type="text" placeholder="Ingrese Fecha del Pedido" id="idFechaPedido">
+        <br>
+        <label for="idCantViandas">Cantidad de Viandas</label>
+        <br>
+        <input type="text" placeholder="Ingrese la cantidad de Viandas" id="idCantViandas">
+        <br>
+        <label for="idTotalFinal">Total Final</label>
+        <br>
+        <input type="text" placeholder="Ingrese el total" id="idTotalFinal">
+
+        
+        <i class="fa-solid fa-plus"></i>
+       <input type="button" value="Agregar Pedido" id="btnAgregarPedido">    
+        <input type="button" value="Nuevo Pedido" id="btnNuevoPedido">
+        <input type="button" value="Guardar Cambios" id="idBtnGuardarCambios2">
+        <input type="button" value="Eliminar Pedido" id="btnEliminarPedido">
+    </div>
+
+
+    <script src="controlador.js" type="module"></script>
+</body>
+</html>

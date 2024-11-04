@@ -1,0 +1,88 @@
+/* vista.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    background-color: #ffffff; /* Fondo blanco para un look limpio */
+    color: #0047ab; /* Azul */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0047ab; /* Azul */
+    margin-bottom: 30px;
+    font-size: 36px; /* Tamaño de fuente mayor */
+}
+
+h2 {
+    color: #0047ab; /* Azul */
+    margin: 20px 0 10px;
+    font-size: 28px; /* Tamaño de fuente mayor */
+    border-bottom: 3px solid #ffd700; /* Línea de oro más gruesa */
+    padding-bottom: 5px;
+}
+
+input[type="button"] {
+    background-color: #ffd700; /* Oro */
+    color: #0047ab; /* Azul */
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadido efecto de transformación */
+}
+
+input[type="button"]:hover {
+    background-color: #f3c900; /* Tono más oscuro de oro al hacer hover */
+    transform: scale(1.05); /* Leve desplazamiento al hacer hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para mayor profundidad */
+}
+
+th, td {
+    border: 1px solid #e0e0e0; /* Bordes suaves */
+    padding: 12px; /* Espaciado mejorado */
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5; /* Fondo claro para encabezados */
+    color: #0047ab; /* Azul */
+    font-weight: bold; /* Texto en negrita */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo claro para filas alternas */
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 215, 0, 0.1); /* Tono de oro suave al pasar el mouse */
+}
+
+label {
+    color: #0047ab; /* Azul */
+    margin-top: 10px;
+    display: block; /* Alineación de etiquetas más uniforme */
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px; /* Mayor padding para entradas */
+    margin: 5px 0;
+    border: 2px solid #e0e0e0; /* Bordes suaves */
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Añadido efecto de sombra */
+}
+input[type="text"]:focus {
+    border-color: #0033a0;
+    box-shadow: 0 0 8px rgba(0, 51, 160, 0.4); /* Azul oscuro */
+  }
+  
